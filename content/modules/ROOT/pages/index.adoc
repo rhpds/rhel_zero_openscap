@@ -7,7 +7,7 @@ toolkit that includes policies and tools that allows you to scan and
 evaluate host machines.
 
 ____
-_NOTE:_ There are 2 tabs that will be used in this lab - a terminal tab
+[!NOTE] There are 2 tabs that will be used in this lab - a terminal tab
 for running the scanner (indicated by _Terminal_), and a browser tab for
 viewing the OpenSCAP report (indicated by _OpenSCAP Report_).
 ____
@@ -26,16 +26,18 @@ already exist. OpenSCAP is not dependant on apache server, however it is
 needed in this lab for the purposes of viewing the HTML report generated
 by OpenSCAP.
 
-....
+[source,bash,run]
+----
 yum install -y httpd openscap-scanner scap-security-guide
-....
+----
 
 After installing, all SCAP Security Guide security policies are in the
 _/usr/share/xml/scap/ssg/content/_ directory.
 
-....
+[source,bash,run]
+----
 ls /usr/share/xml/scap/ssg/content
-....
+----
 
 If you are interested in more details about the _openscap_ tool check
 out -
